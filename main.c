@@ -16,11 +16,13 @@ int main() {
     if (escolha ==0) {
         printf("%s, %d anos", nome, idade);
     }
+    
     if (escolha == 1) {
         printf("Criando um novo cadastro...\n");
         sleep (2);
         system("cls");
     }
+
     printf("Digite seu nome: ");
     scanf("%s", nome);
     system("cls");
@@ -41,9 +43,9 @@ int main() {
     int opcao;
     scanf("%d", &opcao);
     if (opcao == 1) {
-        printf("Nome: %s", nome);
+        printf("Nome: %s\n", nome);
         printf("Idade: %d\n", idade);
-        sleep (2);
+        sleep (5);
         system("cls");
         }
         printf("Deseja editar seus dados? Digite 1 para sim ou 0 para nao: ");
