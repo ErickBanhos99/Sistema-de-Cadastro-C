@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+//Código de sistema de cadastro
+
 int main() {
     char nome[50];
     int (idade);
