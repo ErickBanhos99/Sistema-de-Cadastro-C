@@ -21,7 +21,6 @@ int main() {
         printf("Criando um novo cadastro...\n");
         sleep (2);
         system("cls");
-    }
 
     printf("Digite seu nome: ");
     scanf("%s", nome);
@@ -36,36 +35,39 @@ int main() {
     system("cls");
 
     printf("Cadastro completo!\n");
+    sleep (3);
+    system("cls");
+    }
+
+//ver dados
+    printf("Nome: %s\n", nome);
+    printf("Idade: %d\n", idade);
+    sleep (3);
+ //ver dados
+
+    printf("Deseja editar seus dados? Digite 1 para sim ou 0 para nao: ");
+    int editar;
+    scanf("%d", &editar);
+    if (editar == 1) {
+    printf("Digite seu novo nome: ");
+    scanf("%s", nome);
+    system("cls");
+
+    printf("Digite sua nova idade: ");
+    scanf("%d", &idade);
+    system("cls");
+
+    printf("Dados atualizados!\n");
     sleep (2);
     system("cls");
-    
-    printf("Se voce quiser ver e/ou editar seus dados, digite 1. Caso contrario, digite 0: ");
-    int opcao;
-    scanf("%d", &opcao);
-    if (opcao == 1) {
-        printf("Nome: %s\n", nome);
-        printf("Idade: %d\n", idade);
-        sleep (5);
-        system("cls");
-        }
-        printf("Deseja editar seus dados? Digite 1 para sim ou 0 para nao: ");
-        int editar;
-        scanf("%d", &editar);
+    printf("Obrigado por usar o programa de cadastro, %s!\n", nome);
+    sleep (2);        
+    }
 
-        if (editar == 1) {
-            printf("Digite seu novo nome: ");
-            scanf("%s", nome);
-            system("cls");
-
-            printf("Digite sua nova idade: ");
-            scanf("%d", &idade);
-            system("cls");
-
-            printf("Dados atualizados!\n");
-            sleep (2);
-            system("cls");
-        }
+    else{
+    system("cls");
     printf("Obrigado por usar o programa de cadastro, %s!\n", nome);
     sleep (2);
+    }
     return 0;
 }
